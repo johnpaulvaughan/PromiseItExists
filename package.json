@@ -1,6 +1,6 @@
 {
   "name": "@johnpaulvaughan/promise-it-exists",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks to ensure the file exists. Resolves or Rejects a Promise",
   "main": "index.js",
   "directories": {

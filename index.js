@@ -6,7 +6,7 @@ var fs = require('fs');
  * @param  String
  * @return Promise<string>
  */
-function promiseItExists(filepath) {
+function default_1(filepath) {
     return new Promise(function (resolve, reject) {
         fs.access(filepath, function (err) {
             if (!err)
@@ -16,5 +16,6 @@ function promiseItExists(filepath) {
         });
     });
 }
-exports.promiseItExists = promiseItExists;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = default_1;
 //# sourceMappingURL=index.js.map
