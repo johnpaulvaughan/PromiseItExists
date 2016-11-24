@@ -15,9 +15,9 @@ $ npm install @johnpaulvaughan/promise-it-exists --save
 ##Code Example
 **Resolves a Promise on success:**
 ```javascript
-let promiseItExists = require('@johnpaulvaughan/promise-it-exists');
+let promiseIt = require('@johnpaulvaughan/promise-it-exists').exists;
 
-return promiseItExists('testing/good filename.txt')
+return promiseIt.exists('testing/good filename.txt')
 .then((result) => console.log(result))
 .catch((err) = > console.log(err)
 
@@ -26,9 +26,9 @@ return promiseItExists('testing/good filename.txt')
 
 **Rejects with an error on failure:**
 ```javascript
-let promiseItExists = require('@johnpaulvaughan/promise-it-exists');
+let promiseIt = require('@johnpaulvaughan/promise-it-exists');
 
-return promiseItExists('testing/bad filename.txt')
+return promiseIt.exists('testing/bad filename.txt')
 .then((result) => console.log(result))
 .catch((err) = > console.log(err)
 
