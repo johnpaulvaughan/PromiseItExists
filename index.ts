@@ -6,7 +6,7 @@ import * as fs from 'fs'
  * @param  String
  * @return Promise<string>
  */
-export default function(filepath: string): Promise<string> {
+export function exists(filepath: string): Promise<string> {
 	return new Promise((resolve, reject) => {
 		fs.access(filepath, (err) => {
 			if (!err) resolve(filepath)
