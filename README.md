@@ -4,7 +4,7 @@ This module checks a filepath to confirm the file exists.
 
 
 ## Motivation
-Node does not have a one-liner for file validation, so I made a module to do the job. 
+Node does not have a one-liner for file validation using promises, so I wrote a module to do the job. 
 
 
 ##Installation
@@ -15,7 +15,7 @@ $ npm install @johnpaulvaughan/promise-it-exists --save
 ##Code Example
 **Resolves a Promise on success:**
 ```javascript
-let promiseIt = require('@johnpaulvaughan/promise-it-exists').exists;
+let promiseIt = require('@johnpaulvaughan/promise-it-exists');
 
 return promiseIt.exists('testing/good filename.txt')
 .then((result) => console.log(result))
@@ -27,7 +27,6 @@ return promiseIt.exists('testing/good filename.txt')
 **Rejects with an error on failure:**
 ```javascript
 let promiseIt = require('@johnpaulvaughan/promise-it-exists');
-
 return promiseIt.exists('testing/bad filename.txt')
 .then((result) => console.log(result))
 .catch((err) = > console.log(err)
